@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.19.0-14-cloud-amd64-x86_64-with-debian-10.8",
+    "python": "3.7.10",
+    "heartbeatAt": "2022-01-20T12:48:01.726177",
+    "startedAt": "2022-01-20T12:48:00.156891",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 4,
+    "cpu_count": 4,
+    "cuda": "11.0.207",
+    "args": [],
+    "state": "running",
+    "program": "train_hb.py",
+    "codePath": "train_hb.py",
+    "host": "rapids-20220117-135050",
+    "username": "jupyter",
+    "executable": "/opt/conda/bin/python"
+}

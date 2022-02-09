@@ -1,0 +1,123 @@
+wandb_version: 1
+
+T_max:
+  desc: null
+  value: 500
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.9
+    framework: huggingface
+    huggingface_version: 4.15.0
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: train_loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: val_loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.7.10
+    start_time: 1643480755
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 11
+      3:
+      - 16
+      4: 3.7.10
+      5: 0.12.9
+      6: 4.15.0
+      8:
+      - 2
+      - 5
+_wandb_kernel:
+  desc: null
+  value: neuracort
+checkpoint_directory_path:
+  desc: null
+  value: ../models/checkpoints/lstm
+competition:
+  desc: null
+  value: Jigsaw Toxic Severity LSTM
+device:
+  desc: null
+  value: cuda
+embedding_dim:
+  desc: null
+  value: 50
+epochs:
+  desc: null
+  value: 30
+hidden_dim:
+  desc: null
+  value: 32
+infra:
+  desc: null
+  value: Kaggle
+learning_rate:
+  desc: null
+  value: 0.0001
+margin:
+  desc: null
+  value: 0.5
+max_length:
+  desc: null
+  value: 512
+min_lr:
+  desc: null
+  value: 1.0e-06
+n_accumulate:
+  desc: null
+  value: 1
+n_fold:
+  desc: null
+  value: 5
+num_classes:
+  desc: null
+  value: 1
+num_layers:
+  desc: null
+  value: 3
+num_workers:
+  desc: null
+  value: 8
+scheduler:
+  desc: null
+  value: CosineAnnealingLR
+seed:
+  desc: null
+  value: 42
+train_batch_size:
+  desc: null
+  value: 128
+train_file_path:
+  desc: null
+  value: ../input/folds/train_folds_score_5.csv
+valid_batch_size:
+  desc: null
+  value: 128
+vocab_index_path:
+  desc: null
+  value: ../input/vocab2index.txt
+vocab_size:
+  desc: null
+  value: 84422
+wandb:
+  desc: null
+  value: true
+weight_decay:
+  desc: null
+  value: 1.0e-06

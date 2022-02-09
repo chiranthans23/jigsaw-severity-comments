@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  84%|███████████████████████████████████████████████████████████████████▎            | 1050/1247 [00:44<00:08, 23.76it/s, loss=0.00407, v_num=601i, train_loss=0.0154]
+
+Validating:  84%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 210/250 [00:02<00:00, 79.79it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1:  84%|████████████████████████████████████████████████████▏         | 1050/1247 [00:37<00:06, 28.23it/s, loss=0.00742, v_num=601i, train_loss=0.0177, val_loss=0.00488]
+
+Validating:  84%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 210/250 [00:02<00:00, 82.15it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2:  87%|██████████████████████████████████████████████████████▌        | 1080/1247 [00:37<00:05, 28.82it/s, loss=0.00584, v_num=601i, train_loss=0.0013, val_loss=0.0049]
+
+Validating:  96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     | 240/250 [00:03<00:00, 83.57it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3:  84%|███████████████████████████████████████████████████▎         | 1050/1247 [00:37<00:06, 28.28it/s, loss=0.00508, v_num=601i, train_loss=0.00231, val_loss=0.00488]
+
+Validating:  84%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏                   | 210/250 [00:02<00:00, 80.76it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  82%|██████████████████████████████████████████████████▋           | 1020/1247 [00:36<00:08, 27.91it/s, loss=0.0063, v_num=601i, train_loss=0.00341, val_loss=0.00487]
+
+Validating:  60%|██████████████████████████████████████████████████████████████████████████▍                                                 | 150/250 [00:02<00:01, 77.59it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5:  82%|███████████████████████████████████████████████████▌           | 1020/1247 [00:36<00:08, 27.81it/s, loss=0.00551, v_num=601i, train_loss=0.0144, val_loss=0.0049]
+
+Validating:  72%|█████████████████████████████████████████████████████████████████████████████████████████▎                                  | 180/250 [00:02<00:00, 80.05it/s]
+Epoch 5, global step 5981: val_loss was not in top 1
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+  | Name       | Type      | Params
+-----------------------------------------
+0 | criterion  | MSELoss   | 0
+1 | embeddings | Embedding | 4.2 M
+2 | lstm       | LSTM      | 27.6 K
+3 | linear     | Linear    | 33
+4 | dropout    | Dropout   | 0
+-----------------------------------------
+4.2 M     Trainable params
+0         Non-trainable params
+4.2 M     Total params
+8.498     Total estimated model params size (MB)
+[33m====== Fold: 1 ======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  82%|███████████████████████████████████████████████████████████████▊              | 1020/1247 [00:36<00:08, 27.83it/s, loss=0.00435, v_num=601i, train_loss=0.000951]
+
+Validating:  48%|███████████████████████████████████████████████████████████▌                                                                | 120/250 [00:01<00:01, 72.35it/s]
+
+
+
+
+
+Epoch 1:  17%|██████████▌                                                    | 210/1247 [00:07<00:39, 26.37it/s, loss=0.00566, v_num=601i, train_loss=0.0113, val_loss=0.00516]
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+Exception in thread Thread-34960:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/opt/conda/lib/python3.7/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/opt/conda/lib/python3.7/site-packages/torch/multiprocessing/reductions.py", line 289, in rebuild_storage_fd
+    fd = df.detach()
+  File "/opt/conda/lib/python3.7/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/opt/conda/lib/python3.7/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 499, in Client
+    deliver_challenge(c, authkey)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 730, in deliver_challenge
+    response = connection.recv_bytes(256)        # reject large message
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+  | Name       | Type      | Params
+-----------------------------------------
+0 | criterion  | MSELoss   | 0
+1 | embeddings | Embedding | 4.2 M
+2 | lstm       | LSTM      | 27.6 K
+3 | linear     | Linear    | 33
+4 | dropout    | Dropout   | 0
+-----------------------------------------
+4.2 M     Trainable params
+0         Non-trainable params
+4.2 M     Total params
+8.498     Total estimated model params size (MB)
+Epoch 1:  19%|████████████▏                                                  | 240/1247 [00:09<00:37, 26.53it/s, loss=0.00446, v_num=601i, train_loss=0.0147, val_loss=0.00516][33m====== Fold: 2 ======
+Epoch 0:   0%|                                                                                                                                        | 0/1247 [00:00<?, ?it/s]
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+  | Name       | Type      | Params
+-----------------------------------------
+0 | criterion  | MSELoss   | 0
+1 | embeddings | Embedding | 4.2 M
+2 | lstm       | LSTM      | 27.6 K
+3 | linear     | Linear    | 33
+4 | dropout    | Dropout   | 0
+-----------------------------------------
+4.2 M     Trainable params
+0         Non-trainable params
+4.2 M     Total params
+8.498     Total estimated model params size (MB)
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7fc2b65ffd40>
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1328, in __del__
+    self._shutdown_workers()
+  File "/opt/conda/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1295, in _shutdown_workers
+    if self._persistent_workers or self._workers_status[worker_id]:
+AttributeError: '_MultiProcessingDataLoaderIter' object has no attribute '_workers_status'
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+  | Name       | Type      | Params
+-----------------------------------------
+0 | criterion  | MSELoss   | 0
+1 | embeddings | Embedding | 4.2 M
+2 | lstm       | LSTM      | 27.6 K
+3 | linear     | Linear    | 33
+4 | dropout    | Dropout   | 0
+-----------------------------------------
+4.2 M     Trainable params
+0         Non-trainable params
+4.2 M     Total params
+8.498     Total estimated model params size (MB)
+Global seed set to 42
+Exception ignored in: <function _releaseLock at 0x7fc314cebcb0>
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 221, in _releaseLock
+    def _releaseLock():
+KeyboardInterrupt
+Exception in thread Thread-36023:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/opt/conda/lib/python3.7/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/opt/conda/lib/python3.7/site-packages/torch/multiprocessing/reductions.py", line 289, in rebuild_storage_fd
+    fd = df.detach()
+  File "/opt/conda/lib/python3.7/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/opt/conda/lib/python3.7/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 492, in Client
+    c = SocketClient(address)
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 620, in SocketClient
+    s.connect(address)
+Epoch 0:   0%|                                                                                                                                        | 0/1247 [00:00<?, ?it/s][33m====== Fold: 3 ======
+Validation sanity check:   0%|                                                                                                                           | 0/2 [00:00<?, ?it/s][33m====== Fold: 4 ======
+Epoch 0:   0%|                                                                                                                                        | 0/1247 [00:00<?, ?it/s]

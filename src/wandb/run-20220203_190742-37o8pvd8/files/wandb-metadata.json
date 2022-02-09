@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.19.0-14-cloud-amd64-x86_64-with-debian-10.8",
+    "python": "3.7.10",
+    "heartbeatAt": "2022-02-03T19:07:51.288263",
+    "startedAt": "2022-02-03T19:07:42.868986",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 3,
+    "cpu_count": 8,
+    "cuda": "11.0.207",
+    "args": [],
+    "state": "running",
+    "program": "train_rberta.py",
+    "codePath": "train_rberta.py",
+    "host": "rapids-20220117-135050",
+    "username": "chiras",
+    "executable": "/opt/conda/bin/python"
+}

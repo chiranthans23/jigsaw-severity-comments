@@ -1,0 +1,126 @@
+wandb_version: 1
+
+T_max:
+  desc: null
+  value: 500
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.9
+    framework: huggingface
+    huggingface_version: 4.15.0
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: train_loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: val_loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.7.10
+    start_time: 1643979532
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      2:
+      - 1
+      - 9
+      - 11
+      3:
+      - 7
+      - 16
+      4: 3.7.10
+      5: 0.12.9
+      6: 4.15.0
+      8:
+      - 2
+      - 5
+_wandb_kernel:
+  desc: null
+  value: neuracort
+checkpoint_directory_path:
+  desc: null
+  value: ../models/checkpoints/roberta
+competition:
+  desc: null
+  value: Jigsaw
+device:
+  desc: null
+  value: cuda
+dropout:
+  desc: null
+  value: 0.2
+epochs:
+  desc: null
+  value: 5
+hidden_size:
+  desc: null
+  value: 768
+infra:
+  desc: null
+  value: Kaggle
+learning_rate:
+  desc: null
+  value: 0.0001
+margin:
+  desc: null
+  value: 0.5
+max_length:
+  desc: null
+  value: 512
+min_lr:
+  desc: null
+  value: 1.0e-06
+model_name:
+  desc: null
+  value: ../model/roberta-base
+n_accumulate:
+  desc: null
+  value: 1
+n_fold:
+  desc: null
+  value: 5
+num_workers:
+  desc: null
+  value: 4
+scheduler:
+  desc: null
+  value: CosineAnnealingLR
+seed:
+  desc: null
+  value: 42
+tokenizer:
+  desc: null
+  value: 'PreTrainedTokenizerFast(name_or_path=''../model/roberta-base'', vocab_size=50265,
+    model_max_len=1000000000000000019884624838656, is_fast=True, padding_side=''right'',
+    special_tokens={''bos_token'': ''<s>'', ''eos_token'': ''</s>'', ''unk_token'':
+    ''<unk>'', ''sep_token'': ''</s>'', ''pad_token'': ''<pad>'', ''cls_token'': ''<s>'',
+    ''mask_token'': AddedToken("<mask>", rstrip=False, lstrip=True, single_word=False,
+    normalized=False)})'
+train_batch_size:
+  desc: null
+  value: 32
+train_file_path:
+  desc: null
+  value: ../input/folds/train_full_folds.csv
+valid_batch_size:
+  desc: null
+  value: 128
+wandb:
+  desc: null
+  value: true
+weight_decay:
+  desc: null
+  value: 1.0e-06

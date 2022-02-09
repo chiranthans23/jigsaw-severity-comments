@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0:  11%|████                                 | 480/4391 [05:21<43:36,  1.49it/s, loss=0.00868, v_num=pvd8, train_loss=0.000837]
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+Some weights of the model checkpoint at ../model/roberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.weight', 'lm_head.decoder.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+Epoch 0:  11%|████                                 | 480/4391 [05:21<43:36,  1.49it/s, loss=0.00868, v_num=pvd8, train_loss=0.000837][33m====== Fold: 1 ======
+  | Name       | Type         | Params
+--------------------------------------------
+0 | criterion  | MSELoss      | 0
+1 | model      | RobertaModel | 124 M
+2 | layer_norm | LayerNorm    | 1.5 K
+3 | dropout    | Dropout      | 0
+4 | dense      | Sequential   | 197 K
+--------------------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+249.689   Total estimated model params size (MB)
+Using 16bit native Automatic Mixed Precision (AMP)
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
